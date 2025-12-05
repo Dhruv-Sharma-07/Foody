@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        #main-heading {
+            color: beige;
+            word-spacing: 10px;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            background-color: rgb(22, 43, 75);
+            margin: auto;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+        }
+
+        #caption {
+            color: rgb(194, 22, 22);
+            text-align: center;
+            font-size: x-large;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            word-spacing: 10px;
+
+        }
+
+        #caption:hover {
+            color: rgb(194, 22, 22);
+            text-align: center;
+            font-size: x-large;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            word-spacing: 10px;
+            text-decoration: underline;
+        }
+
+        .hey {
+            width: 500px;
+            margin: auto;
+            background-color: rgb(201, 224, 224);
+            /* text-align: center; */
+            padding: 3px;
+        }
+
+        .space {
+            font-size: 20px;
+            width: 90%;
+            height: 40px;
+            background-color: rgb(218, 240, 240);
+            border-radius: 20px;
+        }
+
+        .radio-button {
+            height: 15px;
+            width: 14px;
+            cursor: pointer;
+
+        }
+
+        .heading {
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .submit {
+            height: 40px;
+            width: 100px;
+            cursor: pointer;
+            font-size: large;
+            font-weight: 600;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: bisque;
+            background-color: rgb(235, 30, 30);
+        }
+
+        .submit:hover {
+            background-color: rgb(255, 0, 0);
+            color: whitesmoke;
+        }
+
+        .reset {
+
+            height: 40px;
+            width: 100px;
+            cursor: pointer;
+            font-size: large;
+            font-weight: 600;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: bisque;
+            background-color: rgb(3, 187, 58);
+        }
+
+        .reset:hover {
+            background-color: rgb(2, 63, 29);
+            color: whitesmoke;
+        }
+
+        .legend {
+            color: rgb(218, 40, 40);
+            font-weight: 900;
+            font-size: larger;
+        }
+    </style>
+
+</head>
+<!-- <iframe src="" name="form" frameborder="0" style="height: 200px; width: 200px;"></iframe>
+            <a href="./table.html" id="form">Open</a>-->
+
+<body>
+    <div class="main">
+        <div class="top">
+            <h1 id="main-heading">Restaurant FeedBack Form</h1>
+            <p id="caption">We care about your opinion</p>
+        </div>
+
+        <div class="form">
+            <form action="">
+                <fieldset class="hey">
+                    <legend class="heading legend">Food Quality Form</legend>
+                    <br>
+                    <label for="full-name" class="heading">Name </label><br>
+                    <input type="text" placeholder="Enter Full-Name" id="full-name" name="full-name" class="space"
+                        required>
+                    <br><br>
+                    <label for="email" class="heading">E-mail </label><br>
+                    <input type="email" name="email" placeholder="abc@sample.com" class="space" required>
+                    <br><br>
+                    <label for="phone-number" class="heading">Phone No.</label><br>
+                    <input type="tel" name="phone-number" placeholder="XXX-XXX-4321" maxlength="10" class="space"
+                        required>
+                    <br><br>
+                    <label for="date" class="heading">Date of Visit</label><br>
+                    <input type="datetime-local" name="date" class="space" required>
+                    <br><br>
+                    <label for="food-quality" class="heading"> Rate Food Quality:</label><br>
+                    <input type="radio" name="food-quality" value="Excellent" class="radio-button"> Excellent
+                    <input type="radio" name="food-quality" value="Good" class="radio-button"> Good
+                    <input type="radio" name="food-quality" value="Average" class="radio-button"> Average
+                    <input type="radio" name="food-quality" value="Poor" class="radio-button"> Poor
+                    <br><br>
+                    <label for="service" class="heading">Service Quality:</label><br>
+                    <input type="radio" name="service" value="Excellent" class="radio-button"> Excellent
+                    <input type="radio" name="service" value="Good" class="radio-button"> Good
+                    <input type="radio" name="service" value="Average" class="radio-button"> Average
+                    <input type="radio" name="service" value="Poor" class="radio-button"> Poor
+                    <br><br>
+                    <label for="cleanliness" class="heading">Cleanliness & Environment:</label><br>
+                    <input type="radio" name="cleanliness" value="Excellent" class="radio-button"> Excellent
+                    <input type="radio" name="cleanliness" value="Good" class="radio-button"> Good
+                    <input type="radio" name="cleanliness" value="Average" class="radio-button"> Average
+                    <input type="radio" name="cleanliness" value="Poor" class="radio-button"> Poor
+                    <br><br>
+                    <label for="food-item" class="heading">Which item do you like on the menu?</label><br>
+                    <input type="checkbox" name="Pizza" value="Pizza" class="radio-button"> Pizza
+                    <input type="checkbox" name="Burger" value="Burger" class="radio-button"> Burger
+                    <input type="checkbox" name="Shakes" value="Shakes" class="radio-button"> Shakes
+                    <input type="checkbox" name="Coffee" value="Coffee" class="radio-button"> Coffee
+                    <br><br>
+                    <label for="recommendations" class="heading">Do you have any recommendations for us?</label><br>
+                    <textarea name="recommendations" id="recommendations" rows="5" cols="40"
+                        placeholder="write here...." class="opinion"></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit" class="submit" title="Submit their form">
+                    <input type="reset" value="Reset" class="reset" title="Reset your form">
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

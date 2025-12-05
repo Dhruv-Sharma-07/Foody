@@ -1,0 +1,153 @@
+.button-class {
+            width: 400px;
+            margin: auto;
+        }
+
+        .button {
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            color: wheat;
+            background-color: red;
+            width: 400px;
+            height: 70px;
+            border: 5px black solid;
+            border-radius: 60px;
+
+        }
+
+        .button:hover {
+            background-color: rgb(255, 91, 62);
+            font-weight: 500;
+            cursor: grab;
+        }
+
+        /* Address CSS  Div*/
+       .orginal-address{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(218, 205, 205);
+       }
+       .address-heading{
+        float: left;
+       }
+       .google-map-class{
+        float: left;
+        margin-top:20px;
+       }
+
+       
+        .red {
+            background-color: tomato;
+            color: aliceblue;
+        }
+
+        .white {
+            background-color: rgb(175, 158, 158);
+            color: black;
+        }
+
+        /* background Image */
+        body {
+            background-image: url("./Background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+            background-color: darkblue;
+            border: 2px solid black;
+            border-radius: 90px;
+            font-weight: bolder;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table,
+        th,
+        td {
+            text-align: center;
+            font-size: x-large;
+            font-weight: 900;
+            color: rgb(0, 0, 0);
+            border: 5px solid white;
+            border-collapse: collapse;
+
+        }
+
+        .food:hover {
+            font-size: xx-large;
+            cursor: grab;
+            background-color: crimson;
+
+        }
+
+        #unique {
+            background-color: rgb(118, 221, 221);
+        }
+
+        .about-us {
+            background-color: bisque;
+            margin: auto;
+            padding: 5px;
+            background-color: rgb(204, 46, 18);
+            border-radius: 50px;
+        }
+
+        .about-us-content {
+            color: yellow;
+            font-weight: 900;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            background-color: black;
+            word-spacing: 10px;
+            text-align: center;
+            font-size: x-large;
+            height: 50px;
+            padding-top: 10px;
+            border-radius: 50px;
+        }
+
+        .about-us-content:hover {
+            font-size: x-large;
+            text-decoration: underline;
+
+
+        }
+
+        .nav{
+            font-size: x-large;
+            color: rgb(94, 8, 8);
+            height: 50px;
+            width: 100%;
+            word-spacing: 25px;
+            float: left;
+        }
+
+        .nav-bar{
+            float: left;
+            width: 19%;
+            height: 40px;
+            background-color: rgb(106, 88, 88);
+            border: 1px solid rgb(222, 210, 210);
+            padding-left: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+             text-align: center;
+        }
+
+        .links{
+            text-decoration: none;
+            font-size: xx-large;
+            font-weight: 700;
+            color: rgb(248, 244, 29);
+
+        }
+        /* #video{
+            height: 800px;
+            width:100%;
+            border-radius: 100px;
+        } */
